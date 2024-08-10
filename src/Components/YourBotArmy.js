@@ -1,8 +1,10 @@
-import React from 'react'
+import BotArmy from "./BotArmy"
 
-const YourBotArmy = () => {
+const YourBotArmy = ({army}) => {
   return (
-    <div>YourBotArmy</div>
+    <div>
+        <BotArmy army={army}/>
+    </div>
   )
 }
 

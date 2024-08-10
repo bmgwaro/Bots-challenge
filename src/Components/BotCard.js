@@ -1,8 +1,8 @@
 import React from 'react'
 
-const BotCard = ({bot}) => {
+const BotCard = ({bot, onClick}) => {
   return (
-    <div className="border border-black m-2 p-2 rounded-lg">
+    <div onClick={onClick} className="border border-black m-2 p-2 rounded-lg">
       <p>Name: {bot.name}</p>
       <p>Health: {bot.health}</p>
       <p>Damage: {bot.damage}</p>
