@@ -1,4 +1,3 @@
-import React, { useEffect, useState } from "react";
 import BotCard from "./BotCard";
 
 const BotArmy = ({army, removeFromArmy}) => {

@@ -20,7 +20,7 @@ function App() {
   };
 
   const removeFromArmy=(bot)=>{
-    setArmy((prevArmy)=>prevArmy.filter((armybot)=>!armybot.id===bot.id))
+    setArmy((prevArmy)=>prevArmy.filter((armybot)=>armybot.id!==bot.id))
   }
 
   return (
