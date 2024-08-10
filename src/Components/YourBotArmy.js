@@ -1,9 +1,9 @@
 import BotArmy from "./BotArmy"
 
-const YourBotArmy = ({army, removeFromArmy}) => {
+const YourBotArmy = ({army, removeFromArmy, deleteBot}) => {
   return (
     <div>
-        <BotArmy army={army} removeFromArmy={removeFromArmy}/>
+        <BotArmy army={army} removeFromArmy={removeFromArmy} deleteBot={deleteBot}/>
     </div>
   )
 }

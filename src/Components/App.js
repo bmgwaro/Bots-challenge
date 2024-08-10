@@ -23,13 +23,30 @@ function App() {
     setArmy((prevArmy)=>prevArmy.filter((armybot)=>armybot.id!==bot.id))
   }
 
+  
+
+  const deleteBot=(bot)=>{
+      fetch(`http://localhost:3000/bots/${bot.id}`, {
+        method:"DELETE",
+        headers:{
+          "Content-Type":"application/json",
+          "Accept":"application/json"
+        },
+      })
+      .then(res=>res.json())
+      .then(()=>{
+        setBots((prevBots)=>prevBots.filter((b)=>b.id !== bot.id))
+        setArmy((prevArmy)=>prevArmy.filter((armybot)=>armybot.id!==bot.id))
+      })
+  }
+
   return (
     <div className="flex">
       <div className="border border-black m-2 rounded-lg w-1/2">
-        <BotCollection bots={bots} addToArmy={addToArmy} />
+        <BotCollection bots={bots} addToArmy={addToArmy} deleteBot={deleteBot}/>
       </div>
       <div className="border border-black m-2 rounded-lg w-1/2">
-        <YourBotArmy army={army} removeFromArmy={removeFromArmy}/>
+        <YourBotArmy army={army} removeFromArmy={removeFromArmy} deleteBot={deleteBot}/>
       </div>
     </div>
   );
