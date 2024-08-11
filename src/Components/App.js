@@ -8,7 +8,7 @@ function App() {
   const [army, setArmy] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:3000/bots")
+    fetch("https://bots-backend-murex.vercel.app/bots")
       .then((res) => res.json())
       .then((data) => setBots(data));
   }, []);
@@ -24,7 +24,7 @@ function App() {
   };
 
   const deleteBot = (bot) => {
-    fetch(`http://localhost:3000/bots/${bot.id}`, {
+    fetch(`https://bots-backend-murex.vercel.app/bots/${bot.id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
