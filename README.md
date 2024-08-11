@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Bot Army Management Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Description
 
-## Available Scripts
+This application allows users to manage a collection of bots. Users can view a list of all available bots, add selected bots to their personal army, release bots from their army, and permanently delete bots from both their army and the backend. The application is designed to provide an interactive experience where users can easily manage their bot collection with intuitive controls.
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Displays all available bots.
+- Shows the bots that have been added to the user's army.
+- Users can add bots to their army by clicking on them in the all bots list.
+- Users can release bots from their army by clicking on them in the your bot army list.
+- Users can permanently delete bots from their army and the backend by clicking the "x" button.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Prerequisites
+- Operating system
+- Browser with console
+- Node 
+- 2GB free disk space
+- JSON server
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Getting Started
+1. Click on this link in order to access the github repository containing this project;
+[https://github.com/bmgwaro/Bots-challenge]
 
-### `npm test`
+2. Click on fork and create a fork of the repository. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+3. Open your terminal and navigate into the directory where you would like to save the work using the `cd` command.
 
-### `npm run build`
+4. Feel free to copy and paste the following command in order to clone the repository into your local storage; 
+`git clone git@github.com:bmgwaro/Bots-challenge.git`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+5. Navigate into the newly cloned folder and type in the `code .` command in order to open it on your text editor.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## How to Use the Application
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. **Viewing All Bots**:
+   - Upon opening the application, you will see a list of all available bots.
+   - Each bot profile includes details such as the bot's name, health, and damage.
 
-### `npm run eject`
+2. **Adding a Bot to Your Army**:
+   - To add a bot to your army, simply click on the bot's profile.
+   - Once selected, the bot will appear in the your bot army list right beside all bots.
+   - Remember, each bot can only be enlisted once, so duplicates are not allowed in your army.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. **Releasing a Bot from Your Army**:
+   - If you want to remove a bot from your army, click on the bot's profile inside the your bot army list.
+   - Click on the bot you wish to release. The bot will disappear from your bot army, but it will remain available in all bots for future re-enlistment.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+4. **Discharging a Bot Permanently**:
+   - To permanently remove a bot from your army and the backend, click on the red "x" button below the the bot's picture.
+   - This action will delete the bot from both your army and the backend database, making it unavailable for future enlistment.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+5. **Managing Your Army**:
+   - You can continue adding, releasing, and discharging bots as needed to manage your army effectively.
+   - Your bot army will always display the current bots in your army, allowing you to keep track of your enlisted forces.
