@@ -37,8 +37,8 @@ function App() {
         setArmy((prevArmy) =>
           prevArmy.filter((armybot) => armybot.id !== bot.id)
         );
-        window.location.reload()
-      });
+      })
+      .then(()=>window.location.reload())
   };
 
   return (
